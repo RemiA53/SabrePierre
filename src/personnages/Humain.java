@@ -1,9 +1,9 @@
 package personnages;
 
 public class Humain {
-	private String nom;
-	private String boissonFav;
-	private int argent;
+	protected String nom;
+	protected String boissonFav;
+	public int argent;
 	public String getNom() {
 		return nom;
 	}
@@ -27,7 +27,7 @@ public class Humain {
 		return argent - perte ;
 	}
 	
-	public String parler(String texte) {
+	protected String parler(String texte) {
 		return "(" + nom + ")-" + texte;
 	}
 	
@@ -48,3 +48,6 @@ public class Humain {
 		}
 	}
 }
+
+
+
