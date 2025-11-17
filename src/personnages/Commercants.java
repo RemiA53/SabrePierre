@@ -12,8 +12,9 @@ public class Commercants extends Humain {
 		return argentPerdu;
 	}
 	
-	public void recevoir(int argent) {
-		
+	public void recevoir(int argents) {
+		argent = argent + argents;
+		System.out.println(parler(argents + " sous ! Je te remercie généreux donateur !"));
 	}
 
 }
